@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="TronGames official web" />
+    <meta name="keywords" content="Tron, Games, Grid, Survey, Form" />
+    <meta name="author" content="Bruno El Daroux" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TronGames Survey Form</title>
+    <link rel="icon" href="../img/code syntax.jpg" />
+    <link rel="stylesheet" href="../css/survey.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">TronGames Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking your time to give feedback on our Games
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Which option describes you?</p>
+
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your role</option>
+            <option value="student">Gamer</option>
+            <option value="job">Software Developer</option>
+            <option value="learner">Web Developer</option>
+            <option value="preferNo">Hacker</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Did you enjoyed our Games?</p>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Prefer not to say</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What did you enjoyed the most?</p>
+
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Features</option>
+            <option value="community">Design</option>
+            <option value="openSource">Background Sound</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like be developed?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="instructions"
+              type="checkbox"
+              class="input-checkbox"
+            />Instructions</label
+          >
+
+          <label>
+            <input
+              name="prefer"
+              value="brightness"
+              type="checkbox"
+              class="input-checkbox"
+            />Brightness</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="sound"
+              type="checkbox"
+              class="input-checkbox"
+            />Sound</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="design"
+              type="checkbox"
+              class="input-checkbox"
+            />Design</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="characters"
+              type="checkbox"
+              class="input-checkbox"
+            />Characters</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="language"
+              type="checkbox"
+              class="input-checkbox"
+            />Language</label
+          >
+
+          <label
+            ><input
+              name="prefer"
+              value="interactions"
+              type="checkbox"
+              class="input-checkbox"
+            />Interactions</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Add your comments:</p>
+
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
